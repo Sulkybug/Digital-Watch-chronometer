@@ -1,0 +1,730 @@
+:root {
+  --orangedColor: orangered;
+  --blackColor: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DSEG14 Classic", sans-serif;
+  background: linear-gradient(
+      rgba(7, 14, 7, 0.767),
+      rgba(139, 93, 40, 0.397),
+      rgba(7, 14, 7, 0.767)
+    ),
+    url("img/photo.jpg");
+}
+
+.carcasa {
+  margin-top: 100px;
+  width: 760px;
+  height: 760px;
+  background-color: rgb(29, 29, 29);
+  border-radius: 48%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.55) 20%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(254, 254, 254, 0) 100%
+  );
+}
+
+.carcasa .linea {
+  --rotation: 0;
+  position: absolute;
+  text-align: center;
+  width: 760px;
+  height: 760px;
+  transform: rotate(var(--rotation));
+}
+
+.carcasa .flechaup {
+  font-size: 65px;
+  padding-top: 0px;
+  color: rgb(255, 136, 0);
+  z-index: 10;
+  height: 790px;
+}
+
+.carcasa .minline1 {
+  --rotation: 8deg;
+  color: var(--orangedColor);
+  z-index: 7.5;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .minline2 {
+  --rotation: 15deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .minline3 {
+  --rotation: 22.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line1 {
+  --rotation: 30deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline4 {
+  --rotation: 37.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .minline5 {
+  --rotation: 45deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .minline6 {
+  --rotation: 52.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line2 {
+  --rotation: 60deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline7 {
+  --rotation: 67.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline8 {
+  --rotation: 75deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline9 {
+  --rotation: 82.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line3 {
+  --rotation: 90deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 45px;
+}
+
+.carcasa .minline10 {
+  --rotation: 97.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline11 {
+  --rotation: 105deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline12 {
+  --rotation: 112.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line4 {
+  --rotation: 120deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline13 {
+  --rotation: 127.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline14 {
+  --rotation: 135deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline15 {
+  --rotation: 142.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line5 {
+  --rotation: 150deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline16 {
+  --rotation: 157.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline17 {
+  --rotation: 165deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline18 {
+  --rotation: 172.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .flechadown {
+  --rotation: 180deg;
+  font-size: 65px;
+  color: var(--orangedColor);
+  z-index: 10;
+  height: 790px;
+}
+
+.carcasa .minline19 {
+  --rotation: 187.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline20 {
+  --rotation: 195deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline21 {
+  --rotation: 202.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line6 {
+  --rotation: 210deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline22 {
+  --rotation: 217.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline23 {
+  --rotation: 225deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline24 {
+  --rotation: 232.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line7 {
+  --rotation: 240deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline25 {
+  --rotation: 247.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline26 {
+  --rotation: 255deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline27 {
+  --rotation: 262.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line8 {
+  --rotation: 270deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline28 {
+  --rotation: 277.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline29 {
+  --rotation: 285deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline30 {
+  --rotation: 292.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line9 {
+  --rotation: 300deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline31 {
+  --rotation: 307.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline32 {
+  --rotation: 315deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline33 {
+  --rotation: 322.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.carcasa .line10 {
+  --rotation: 330deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 40px;
+}
+
+.carcasa .minline34 {
+  --rotation: 337.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline35 {
+  --rotation: 345deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+.carcasa .minline36 {
+  --rotation: 352.5deg;
+  color: var(--orangedColor);
+  z-index: 10;
+  font-size: 35px;
+  height: 720px;
+}
+
+.outside {
+  width: 650px;
+  height: 650px;
+  background-color: var(--blackColor);
+  border-radius: 50%;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  transform: rotate(var(--rotation));
+  width: 590px;
+  height: 590px;
+  background-image: -webkit-radial-gradient(
+      50% 0%,
+      8% 50%,
+      hsla(0, 0%, 100%, 0.5) 0%,
+      hsla(0, 0%, 100%, 0) 100%
+    ),
+    -webkit-radial-gradient(50% 100%, 12% 50%, hsla(0, 0%, 100%, 0.6) 0%, hsla(
+            0,
+            0%,
+            100%,
+            0
+          )
+          100%),
+    -webkit-radial-gradient(0% 50%, 50% 7%, hsla(0, 0%, 100%, 0.5) 0%, hsla(
+            0,
+            0%,
+            100%,
+            0
+          )
+          100%),
+    -webkit-radial-gradient(100% 50%, 50% 5%, hsla(0, 0%, 100%, 0.5) 0%, hsla(
+            0,
+            0%,
+            100%,
+            0
+          )
+          100%),
+    -webkit-repeating-radial-gradient(50% 50%, 100% 100%, hsla(0, 0%, 0%, 0) 0%, hsla(
+            0,
+            0%,
+            0%,
+            0
+          )
+          3%, hsla(0, 100%, 50%, 0.1) 3.5%),
+    -webkit-repeating-radial-gradient(50% 50%, 100% 100%, hsla(29, 100%, 50%, 0)
+          0%, hsla(0, 0%, 100%, 0) 6%, hsla(32, 100%, 50%, 0.1) 7.5%),
+    -webkit-repeating-radial-gradient(50% 50%, 100% 100%, hsla(0, 0%, 100%, 0)
+          0%, hsla(0, 0%, 100%, 0) 1.2%, hsla(36, 100%, 50%, 0.2) 2.2%),
+    -webkit-radial-gradient(50% 50%, 200% 50%, rgb(224, 123, 6) 5%, rgb(
+            155,
+            76,
+            2
+          )
+          30%, hsla(0, 0%, 60%, 1) 100%);
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innercircle {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.842);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 60px;
+}
+
+.amPm {
+  font-size: 25px;
+}
+
+.segundos,
+.amPm,
+.fecha,
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+}
+
+.fecha {
+  margin-top: 70px;
+  font-size: 30px;
+}
+
+.segundos {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: rgb(255, 136, 0);
+  border-radius: 50%;
+  width: 53px;
+  height: 54px;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(29, 29, 29);
+}
+
+button:hover,
+button:active {
+  background-color: rgb(29, 29, 29);
+  background-position: 0 0;
+  color: var(--orangedColor);
+  border: 1px solid var(--blackColor);
+  transform: scale(1.1);
+}
+
+.description {
+  color: white;
+}
+
+@media only screen and (max-width: 720px) {
+  .body {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.chrono,
+.centesimas {
+  visibility: hidden;
+  display: none;
+}
+
+.centesimas {
+  font-size: 70px;
+  color: var(--orangedColor);
+}
+
+.circle .text {
+  --rotation: 0deg;
+  position: absolute;
+  text-align: center;
+  width: 630px;
+  height: 630px;
+  font-size: 12px;
+  color: rgb(255, 136, 0);
+}
+
+.circle .inline1 {
+  --rotation: 0deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 11px;
+  color: var(--blackColor);
+}
+
+.circle .inminline1 {
+  --rotation: 30deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
+
+.circle .inminline2 {
+  --rotation: 60deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
+
+.circle .text1 {
+  --rotation: 60deg;
+  position: absolute;
+  text-align: center;
+  width: 655px;
+  height: 655px;
+  font-size: 25px;
+  color: rgb(255, 136, 0);
+}
+
+.circle .inline2 {
+  --rotation: 90deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 11px;
+  color: var(--blackColor);
+  transform: rotateZ(90deg);
+}
+
+.circle .text2 {
+  --rotation: 90deg;
+  position: absolute;
+  text-align: center;
+  width: 655px;
+  height: 655px;
+  font-size: 25px;
+  color: rgb(255, 136, 0);
+}
+
+.circle .inminline3 {
+  --rotation: 120deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
+
+.circle .text3 {
+  --rotation: 120deg;
+  position: absolute;
+  text-align: center;
+  width: 655px;
+  height: 655px;
+  font-size: 25px;
+  color: rgb(255, 136, 0);
+}
+
+.circle .inminline4 {
+  --rotation: 150deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
+
+.circle .inline3 {
+  --rotation: 180deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 11px;
+  color: var(--blackColor);
+}
+
+.circle .text4 {
+  --rotation: 180deg;
+  position: absolute;
+  text-align: center;
+  width: 655px;
+  height: 655px;
+  font-size: 25px;
+  color: rgb(255, 136, 0);
+}
+
+.circle .inminline5 {
+  --rotation: 210deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
+
+.circle .inminline6 {
+  --rotation: 240deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
+
+.circle .inline4 {
+  --rotation: 270deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 11px;
+  color: var(--blackColor);
+}
+
+.circle .inminline7 {
+  --rotation: 300deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
+
+.circle .inminline8 {
+  --rotation: 330deg;
+  position: absolute;
+  text-align: center;
+  width: 587px;
+  height: 587px;
+  font-size: 13px;
+  color: var(--blackColor);
+  font-weight: 900;
+}
