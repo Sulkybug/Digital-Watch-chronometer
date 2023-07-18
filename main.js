@@ -1,8 +1,8 @@
 const week = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 function myWatch() {
-  let reloj = document.querySelector(".time");
-  let contador = document.querySelector(".segundos");
-  let date = document.querySelector(".fecha");
+  let watch = document.querySelector(".time");
+  let counter = document.querySelector(".seconds");
+  let date = document.querySelector(".date");
   let amPm = document.querySelector(".amPm");
   let changeMode = document.querySelector(".change_mode");
   let actionButton = document.querySelector(".action_button");
@@ -10,61 +10,61 @@ function myWatch() {
   let resetButton = document.querySelector(".reset_button");
   let toggle1 = document.querySelector(".toggle1");
   let chronoDisplay = document.querySelector(".chrono");
-  let centsDisplay = document.querySelector(".centesimas");
+  let centsDisplay = document.querySelector(".hundredths");
 
   let mainScreen = setInterval(clock, 1000);
 
   function clock() {
-    let horaActual = new Date();
-    let year = horaActual.getFullYear();
-    let mes = horaActual.getMonth() + 1;
-    if (mes < 10) {
-      mes = `0${mes}`;
+    let currentTime = new Date();
+    let year = currentTime.getFullYear();
+    let month = currentTime.getMonth() + 1;
+    if (month < 10) {
+      month = `0${month}`;
     }
-    let dia = week[horaActual.getDay()];
-    let diaNum = horaActual.getDate();
-    if (diaNum < 10) {
-      diaNum = `0${diaNum}`;
+    let day = week[currentTime.getDay()];
+    let dayNum = currentTime.getDate();
+    if (dayNum < 10) {
+      dayNum = `0${dayNum}`;
     }
-    let horas = horaActual.getHours();
-    let momentoAMPM;
-    if (horas === 0) {
-      horas = `${horas + 12}`;
+    let hours = currentTime.getHours();
+    let momentAMPM;
+    if (hours === 0) {
+      hours = `${hours + 12}`;
     }
-    if (horas === 12) {
-      momentoAMPM = "PM";
+    if (hours === 12) {
+      momentAMPM = "PM";
     }
-    if (horas > 12) {
-      momentoAMPM = "PM";
-      horas = `${horas - 12}`;
+    if (hours > 12) {
+      momentAMPM = "PM";
+      hours = `${hours - 12}`;
     } else {
-      momentoAMPM = "AM";
-      horas = `${horas}`;
+      momentAMPM = "AM";
+      hours = `${hours}`;
     }
-    if (horas === 12) {
-      momentoAMPM = "PM";
-    }
-
-    let minutos = horaActual.getMinutes();
-    if (minutos < 10) {
-      minutos = `0${minutos}`;
+    if (hours === 12) {
+      momentAMPM = "PM";
     }
 
-    let segundos = horaActual.getSeconds();
-    if (segundos < 10) {
-      segundos = `0${segundos}`;
+    let minutes = currentTime.getMinutes();
+    if (minutes < 10) {
+      minutes = `0${minutes}`;
     }
 
-    amPm.innerHTML = momentoAMPM;
-    reloj.innerHTML = `${horas}:${minutos}`;
-    contador.innerHTML = `${segundos}`;
-    date.innerHTML = `${mes}/${dia}${diaNum}/${year}`;
+    let seconds = currentTime.getSeconds();
+    if (seconds < 10) {
+      seconds = `0${seconds}`;
+    }
+
+    amPm.innerHTML = momentAMPM;
+    watch.innerHTML = `${hours}:${minutes}`;
+    counter.innerHTML = `${seconds}`;
+    date.innerHTML = `${month}/${day}${dayNum}/${year}`;
   }
 
   function UtcTime() {
-    let horaActual = new Date();
-    let utcHour = horaActual.getUTCHours();
-    let utcMin = horaActual.getUTCMinutes();
+    let currentTime = new Date();
+    let utcHour = currentTime.getUTCHours();
+    let utcMin = currentTime.getUTCMinutes();
     if (utcMin < 10) {
       utcMin = `0${utcMin}`;
     }
@@ -78,7 +78,7 @@ function myWatch() {
 
   changeMode.addEventListener("click", () => {
     clearInterval(mainScreen);
-    reloj.innerHTML = "";
+    watch.innerHTML = "";
     toggle1.style.visibility = "hidden";
     chronoDisplay.style.visibility = "visible";
     centsDisplay.style.visibility = "visible";
@@ -87,7 +87,7 @@ function myWatch() {
     date.innerHTML = "chronometer";
     chronoDisplay.innerHTML = "0.0";
     centsDisplay.innerHTML = ".00";
-    contador.innerHTML = "Time";
+    counter.innerHTML = "Time";
     amPm.innerHTML = "";
 
     let cseg = 0;
@@ -95,9 +95,9 @@ function myWatch() {
     let min = 0;
     let crono = 0;
     function cronometro() {
-      let horaActual = new Date();
-      let myMin = horaActual.getMinutes();
-      let myHour = horaActual.getHours();
+      let currentTime = new Date();
+      let myMin = currentTime.getMinutes();
+      let myHour = currentTime.getHours();
       if (myMin < 10) {
         myMin = `0${myMin}`;
       }
@@ -130,7 +130,7 @@ function myWatch() {
       date.innerHTML = "chronometer";
       chronoDisplay.innerHTML = min + "." + seg;
       centsDisplay.innerHTML = "." + cseg;
-      contador.innerHTML = myHour + ":" + myMin;
+      counter.innerHTML = myHour + ":" + myMin;
     }
     actionButton.addEventListener("click", (e) => {
       crono = setInterval(cronometro, 10);
@@ -145,7 +145,7 @@ function myWatch() {
       actionButton.removeAttribute(`disabled`);
       chronoDisplay.innerHTML = "0.0";
       centsDisplay.innerHTML = "0.0";
-      contador.innerHTML = "Time";
+      counter.innerHTML = "Time";
       cseg = 0;
       seg = 0;
       min = 0;
