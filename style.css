@@ -544,12 +544,12 @@ button:active {
 }
 
 .chrono,
-.centesimas {
+.hundredths {
   visibility: hidden;
   display: none;
 }
 
-.centesimas {
+.hundredths {
   font-size: 70px;
   color: var(--orangedColor);
 }
