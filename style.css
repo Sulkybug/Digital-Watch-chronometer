@@ -4,10 +4,10 @@
 }
 
 body {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   font-family: "DSEG14 Classic", sans-serif;
   background: linear-gradient(
       rgba(7, 14, 7, 0.767),
@@ -17,7 +17,8 @@ body {
     url("img/photo.jpg");
 }
 
-.carcasa {
+.case {
+  box-shadow: black 4px 2px 15px;
   margin-top: 100px;
   width: 760px;
   height: 760px;
@@ -35,7 +36,7 @@ body {
   );
 }
 
-.carcasa .linea {
+.case .line {
   --rotation: 0;
   position: absolute;
   text-align: center;
@@ -44,7 +45,7 @@ body {
   transform: rotate(var(--rotation));
 }
 
-.carcasa .flechaup {
+.case .flechaup {
   font-size: 65px;
   padding-top: 0px;
   color: rgb(255, 136, 0);
@@ -52,7 +53,7 @@ body {
   height: 790px;
 }
 
-.carcasa .minline1 {
+.case .minline1 {
   --rotation: 8deg;
   color: var(--orangedColor);
   z-index: 7.5;
@@ -60,7 +61,7 @@ body {
   height: 720px;
 }
 
-.carcasa .minline2 {
+.case .minline2 {
   --rotation: 15deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -68,7 +69,7 @@ body {
   height: 720px;
 }
 
-.carcasa .minline3 {
+.case .minline3 {
   --rotation: 22.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -76,14 +77,14 @@ body {
   height: 720px;
 }
 
-.carcasa .line1 {
+.case .line1 {
   --rotation: 30deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline4 {
+.case .minline4 {
   --rotation: 37.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -91,7 +92,7 @@ body {
   height: 720px;
 }
 
-.carcasa .minline5 {
+.case .minline5 {
   --rotation: 45deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -99,7 +100,7 @@ body {
   height: 720px;
 }
 
-.carcasa .minline6 {
+.case .minline6 {
   --rotation: 52.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -107,28 +108,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line2 {
+.case .line2 {
   --rotation: 60deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline7 {
+.case .minline7 {
   --rotation: 67.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline8 {
+.case .minline8 {
   --rotation: 75deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline9 {
+.case .minline9 {
   --rotation: 82.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -136,28 +137,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line3 {
+.case .line3 {
   --rotation: 90deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 45px;
 }
 
-.carcasa .minline10 {
+.case .minline10 {
   --rotation: 97.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline11 {
+.case .minline11 {
   --rotation: 105deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline12 {
+.case .minline12 {
   --rotation: 112.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -165,28 +166,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line4 {
+.case .line4 {
   --rotation: 120deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline13 {
+.case .minline13 {
   --rotation: 127.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline14 {
+.case .minline14 {
   --rotation: 135deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline15 {
+.case .minline15 {
   --rotation: 142.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -194,28 +195,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line5 {
+.case .line5 {
   --rotation: 150deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline16 {
+.case .minline16 {
   --rotation: 157.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline17 {
+.case .minline17 {
   --rotation: 165deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline18 {
+.case .minline18 {
   --rotation: 172.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -223,7 +224,7 @@ body {
   height: 720px;
 }
 
-.carcasa .flechadown {
+.case .flechadown {
   --rotation: 180deg;
   font-size: 65px;
   color: var(--orangedColor);
@@ -231,21 +232,21 @@ body {
   height: 790px;
 }
 
-.carcasa .minline19 {
+.case .minline19 {
   --rotation: 187.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline20 {
+.case .minline20 {
   --rotation: 195deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline21 {
+.case .minline21 {
   --rotation: 202.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -253,28 +254,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line6 {
+.case .line6 {
   --rotation: 210deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline22 {
+.case .minline22 {
   --rotation: 217.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline23 {
+.case .minline23 {
   --rotation: 225deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline24 {
+.case .minline24 {
   --rotation: 232.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -282,28 +283,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line7 {
+.case .line7 {
   --rotation: 240deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline25 {
+.case .minline25 {
   --rotation: 247.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline26 {
+.case .minline26 {
   --rotation: 255deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline27 {
+.case .minline27 {
   --rotation: 262.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -311,28 +312,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line8 {
+.case .line8 {
   --rotation: 270deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline28 {
+.case .minline28 {
   --rotation: 277.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline29 {
+.case .minline29 {
   --rotation: 285deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline30 {
+.case .minline30 {
   --rotation: 292.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -340,28 +341,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line9 {
+.case .line9 {
   --rotation: 300deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline31 {
+.case .minline31 {
   --rotation: 307.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline32 {
+.case .minline32 {
   --rotation: 315deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline33 {
+.case .minline33 {
   --rotation: 322.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -369,28 +370,28 @@ body {
   height: 720px;
 }
 
-.carcasa .line10 {
+.case .line10 {
   --rotation: 330deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 40px;
 }
 
-.carcasa .minline34 {
+.case .minline34 {
   --rotation: 337.5deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline35 {
+.case .minline35 {
   --rotation: 345deg;
   color: var(--orangedColor);
   z-index: 10;
   font-size: 35px;
   height: 720px;
 }
-.carcasa .minline36 {
+.case .minline36 {
   --rotation: 352.5deg;
   color: var(--orangedColor);
   z-index: 10;
@@ -481,16 +482,16 @@ body {
   font-size: 25px;
 }
 
-.segundos,
+.seconds,
 .amPm,
-.fecha,
+.date,
 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.centro {
+.center {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -498,12 +499,12 @@ h1 {
   height: 220px;
 }
 
-.fecha {
+.date {
   margin-top: 70px;
   font-size: 30px;
 }
 
-.segundos {
+.seconds {
   font-size: 60px;
   margin-top: 10px;
 }
@@ -518,6 +519,7 @@ button {
   justify-content: center;
   align-items: center;
   color: rgb(29, 29, 29);
+  box-shadow: black 4px 2px 15px;
 }
 
 button:hover,
@@ -531,6 +533,7 @@ button:active {
 
 .description {
   color: white;
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
 }
 
 @media only screen and (max-width: 720px) {
